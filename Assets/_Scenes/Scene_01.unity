@@ -793,7 +793,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The door won't open while the power is off...
+  m_Text: Need a Keycard to open this door...
 --- !u!222 &782141866
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -938,7 +938,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.5854, y: 0.093}
+  m_AnchoredPosition: {x: -0.5854, y: 0.092999995}
   m_SizeDelta: {x: 906.873, y: 64.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1165044509
@@ -1046,17 +1046,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5,
     type: 2}
   m_PrefabInternal: {fileID: 1170808069}
---- !u!1 &1170808071 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1593811283291288, guid: 5e86f5f2f6746474583e13b60dde44a5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1170808069}
 --- !u!114 &1170808072
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1170808071}
+  m_GameObject: {fileID: 1888339901}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aba11398fe33d85468476640905e6445, type: 3}
@@ -1065,6 +1060,7 @@ MonoBehaviour:
   text:
   - {fileID: 1170808073}
   - {fileID: 275633089}
+  waitSeconds: 3
   hasPower: 0
   hasCard: 0
 --- !u!1 &1170808073 stripped
@@ -1805,6 +1801,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1796332959}
+--- !u!1 &1888339901 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1593811283291288, guid: 5e86f5f2f6746474583e13b60dde44a5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1170808069}
 --- !u!1001 &1896378155
 Prefab:
   m_ObjectHideFlags: 0
@@ -1894,6 +1895,19 @@ Prefab:
     - target: {fileID: 61237677310552786, guid: ee93cf6f8b5cb094c9754f31300ace1e,
         type: 2}
       propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 95782579868610144, guid: ee93cf6f8b5cb094c9754f31300ace1e,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 82b519387524d1a478ec2c67e2551574, type: 2}
+    - target: {fileID: 4513657880788542, guid: ee93cf6f8b5cb094c9754f31300ace1e, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513657880788542, guid: ee93cf6f8b5cb094c9754f31300ace1e, type: 2}
+      propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

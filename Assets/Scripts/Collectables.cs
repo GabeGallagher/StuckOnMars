@@ -10,8 +10,18 @@ using UnityEngine;
 
 public class Collectables : MonoBehaviour
 {
+    public Animator anim;
+
+    bool isCollected = false;
+
     private void OnMouseDown()
     {
         Debug.Log("Clicked " + name);
+        if (!isCollected)
+        {
+            transform.position = Vector2.zero;
+            anim.SetBool("isCollected", true);
+            isCollected = true;
+        }
     }
 }

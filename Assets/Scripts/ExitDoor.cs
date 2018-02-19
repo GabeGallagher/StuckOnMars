@@ -12,5 +12,9 @@ public class ExitDoor : Interactables
         {
             StartCoroutine(base.ShowElement(base.text[0]));
         }
+        else if (hasPower && !hasCard)
+        {
+            StartCoroutine(base.ShowElement(base.text[1]));
+        }
     }
 }
