@@ -8,15 +8,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collectables : MonoBehaviour
+public class Collectable : MonoBehaviour
 {
     public Animator anim;
 
-    bool isCollected = false;
+    public bool isCollected = false;
 
     private void OnMouseDown()
     {
-        Debug.Log("Clicked " + name);
         if (!isCollected)
         {
             transform.position = Vector2.zero;
