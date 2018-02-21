@@ -12,17 +12,39 @@ public class Inventory : MonoBehaviour
 {
     public void Place(GameObject collectable)
     {
-        GameObject slot = new GameObject();
+        Debug.Log("Placing: " + collectable.name);
 
-        for (int i = transform.childCount - 1; i >= 0; --i)
+        GameObject targetSlot = new GameObject();
+
+        for (int i = 0; i < transform.childCount; ++i)
         {
-            if (!transform.GetChild(i).gameObject.GetComponent<Collectable>())
+            GameObject slot = transform.GetChild(i).gameObject;
+            Debug.Log("At " + slot.name);
+            bool hasCollectable = false;
+
+            for (int j = 0; j < slot.transform.childCount; ++j)
             {
-                slot = transform.GetChild(i).gameObject;
+                Transform child = slot.transform.GetChild(j);
+
+                Debug.Log("At " + slot.transform.GetChild(j));
+
+                if (child.GetComponent<Collectable>())
+                {
+                    //if we find a collectable in this slot, exit the loop
+                    Debug.Log("Found a collectable");
+                    hasCollectable = true;
+                    j = slot.transform.childCount;
+                }
+            }
+
+            if (!hasCollectable)
+            {
+                i = transform.childCount;
+                targetSlot = slot;
             }
         }
         //places collectable in inventory
-        collectable.transform.parent = slot.transform;
+        collectable.transform.parent = targetSlot.transform;
         collectable.transform.localPosition = Vector2.zero;
     }
 }
