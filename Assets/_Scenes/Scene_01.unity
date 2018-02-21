@@ -922,7 +922,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1257271926}
   m_Layer: 0
-  m_Name: GameObjects
+  m_Name: Collectables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1224,6 +1224,19 @@ Prefab:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 1374603435}
+    - target: {fileID: 95782579868610144, guid: ee93cf6f8b5cb094c9754f31300ace1e,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 125dc4f02dfaf984687261d38607f256, type: 2}
+    - target: {fileID: 4513657880788542, guid: ee93cf6f8b5cb094c9754f31300ace1e, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513657880788542, guid: ee93cf6f8b5cb094c9754f31300ace1e, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee93cf6f8b5cb094c9754f31300ace1e, type: 2}
   m_IsPrefabParent: 0
