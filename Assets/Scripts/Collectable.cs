@@ -13,6 +13,7 @@ public class Collectable : MonoBehaviour
     public Animator anim;
 
     public bool isCollected = false;
+    public bool isPlaced = false;
 
     private void OnMouseDown()
     {
@@ -21,6 +22,11 @@ public class Collectable : MonoBehaviour
             transform.position = Vector2.zero;
             anim.SetBool("isCollected", true);
             isCollected = true;
+        }
+
+        if (isCollected && isPlaced)
+        {
+            Debug.Log("Do action");
         }
     }
 }

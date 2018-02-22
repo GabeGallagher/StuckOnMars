@@ -44,7 +44,7 @@ public class Inventory : MonoBehaviour
             }
         }
         //places collectable in inventory
-        collectable.transform.parent = targetSlot.transform;
-        collectable.transform.localPosition = Vector2.zero;
+        collectable.transform.position = targetSlot.transform.position;
+        collectable.GetComponent<Collectable>().isPlaced = true;
     }
 }
