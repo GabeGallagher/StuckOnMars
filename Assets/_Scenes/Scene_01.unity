@@ -388,6 +388,11 @@ Prefab:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 1374603435}
+    - target: {fileID: 95782579868610144, guid: ee93cf6f8b5cb094c9754f31300ace1e,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b56eca050f7a85f408fba883383bae4f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee93cf6f8b5cb094c9754f31300ace1e, type: 2}
   m_IsPrefabParent: 0
