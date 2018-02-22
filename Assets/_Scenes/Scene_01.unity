@@ -726,7 +726,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 768191235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15b7121744ae6af4da76a08336534cac, type: 3}
+  m_Script: {fileID: 11500000, guid: 970d70ffa601274469849164ac460062, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text:
@@ -908,6 +908,7 @@ RectTransform:
   - {fileID: 1170808070}
   - {fileID: 2009130172}
   - {fileID: 768191233}
+  - {fileID: 2088225778}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1662,7 +1663,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2009130174}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15b7121744ae6af4da76a08336534cac, type: 3}
+  m_Script: {fileID: 11500000, guid: 970d70ffa601274469849164ac460062, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text:
@@ -1737,3 +1738,102 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2040058996}
+--- !u!1001 &2088225777
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1016619292}
+    m_Modifications:
+    - target: {fileID: 114894505503164130, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: text.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 309.74255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 61739252556845378, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -4.422392
+      objectReference: {fileID: 0}
+    - target: {fileID: 61739252556845378, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.61118317
+      objectReference: {fileID: 0}
+    - target: {fileID: 61739252556845378, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -1.0246985
+      objectReference: {fileID: 0}
+    - target: {fileID: 61739252556845378, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.54705673
+      objectReference: {fileID: 0}
+    - target: {fileID: 1593811283291288, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_Name
+      value: PowerSource
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713377390617228, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_Name
+      value: NoPower
+      objectReference: {fileID: 0}
+    - target: {fileID: 114973158030591108, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_Text
+      value: I need to place a Power Cell here...
+      objectReference: {fileID: 0}
+    - target: {fileID: 114894505503164130, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: text.Array.data[0]
+      value: 
+      objectReference: {fileID: 2088225779}
+    - target: {fileID: 1713377390617228, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &2088225778 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5,
+    type: 2}
+  m_PrefabInternal: {fileID: 2088225777}
+--- !u!1 &2088225779 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1713377390617228, guid: 5e86f5f2f6746474583e13b60dde44a5,
+    type: 2}
+  m_PrefabInternal: {fileID: 2088225777}

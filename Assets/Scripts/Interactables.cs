@@ -28,6 +28,9 @@ public class Interactables : MonoBehaviour
 
     public virtual void OnMouseDown()
     {
-        Debug.Log("Do something with text, or something");
+        if (!hasPower)
+        {
+            StartCoroutine(ShowElement(text[0]));
+        }
     }
 }
