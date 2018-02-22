@@ -586,6 +586,153 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &768191232
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1016619292}
+    m_Modifications:
+    - target: {fileID: 114894505503164130, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: text.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 309.74258
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114973158030591108, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_Text
+      value: The power is down. I'll need to insert a Power Cell to get it going...
+      objectReference: {fileID: 0}
+    - target: {fileID: 114973158030591108, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224302467333216864, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 61739252556845378, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -5.111718
+      objectReference: {fileID: 0}
+    - target: {fileID: 61739252556845378, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1.2945485
+      objectReference: {fileID: 0}
+    - target: {fileID: 61739252556845378, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.02008462
+      objectReference: {fileID: 0}
+    - target: {fileID: 61739252556845378, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 1.170609
+      objectReference: {fileID: 0}
+    - target: {fileID: 1593811283291288, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_Name
+      value: Generator_Far
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713377390617228, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_Name
+      value: NoPower
+      objectReference: {fileID: 0}
+    - target: {fileID: 114894505503164130, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: text.Array.data[0]
+      value: 
+      objectReference: {fileID: 768191234}
+    - target: {fileID: 1713377390617228, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 85.56423
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 85.56423
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 85.56423
+      objectReference: {fileID: 0}
+    - target: {fileID: 224621278502985916, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.092999995
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114894505503164130, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &768191233 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5,
+    type: 2}
+  m_PrefabInternal: {fileID: 768191232}
+--- !u!1 &768191234 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1713377390617228, guid: 5e86f5f2f6746474583e13b60dde44a5,
+    type: 2}
+  m_PrefabInternal: {fileID: 768191232}
+--- !u!1 &768191235 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1593811283291288, guid: 5e86f5f2f6746474583e13b60dde44a5,
+    type: 2}
+  m_PrefabInternal: {fileID: 768191232}
+--- !u!114 &768191236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768191235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b7121744ae6af4da76a08336534cac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text:
+  - {fileID: 768191234}
+  waitSeconds: 3
+  hasPower: 0
 --- !u!1 &782141863
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +906,8 @@ RectTransform:
   - {fileID: 2040058997}
   - {fileID: 468325093}
   - {fileID: 1170808070}
+  - {fileID: 2009130172}
+  - {fileID: 768191233}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1390,6 +1539,136 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee93cf6f8b5cb094c9754f31300ace1e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &2009130171
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1016619292}
+    m_Modifications:
+    - target: {fileID: 114894505503164130, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: text.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 309.74255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114973158030591108, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_Text
+      value: The power is down. I'll need to insert a Power Cell to get it going...
+      objectReference: {fileID: 0}
+    - target: {fileID: 114973158030591108, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224302467333216864, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 61739252556845378, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -3.471035
+      objectReference: {fileID: 0}
+    - target: {fileID: 61739252556845378, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1.3199854
+      objectReference: {fileID: 0}
+    - target: {fileID: 61739252556845378, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.38256115
+      objectReference: {fileID: 0}
+    - target: {fileID: 61739252556845378, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 3.1419744
+      objectReference: {fileID: 0}
+    - target: {fileID: 1593811283291288, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_Name
+      value: Generator_Close
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713377390617228, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_Name
+      value: NoPower
+      objectReference: {fileID: 0}
+    - target: {fileID: 114894505503164130, guid: 5e86f5f2f6746474583e13b60dde44a5,
+        type: 2}
+      propertyPath: text.Array.data[0]
+      value: 
+      objectReference: {fileID: 2009130173}
+    - target: {fileID: 1713377390617228, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114894505503164130, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &2009130172 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4760261415970924, guid: 5e86f5f2f6746474583e13b60dde44a5,
+    type: 2}
+  m_PrefabInternal: {fileID: 2009130171}
+--- !u!1 &2009130173 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1713377390617228, guid: 5e86f5f2f6746474583e13b60dde44a5,
+    type: 2}
+  m_PrefabInternal: {fileID: 2009130171}
+--- !u!1 &2009130174 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1593811283291288, guid: 5e86f5f2f6746474583e13b60dde44a5,
+    type: 2}
+  m_PrefabInternal: {fileID: 2009130171}
+--- !u!114 &2009130175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2009130174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b7121744ae6af4da76a08336534cac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text:
+  - {fileID: 2009130173}
+  waitSeconds: 3
+  hasPower: 0
 --- !u!1 &2040058996
 GameObject:
   m_ObjectHideFlags: 0
