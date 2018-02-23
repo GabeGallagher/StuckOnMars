@@ -50,8 +50,7 @@ public class Inventory : MonoBehaviour
         collectable.GetComponent<Collectable>().inventorySlot = targetSlot;
     }
 
-    //Changes color of inventory slot and deselects item
-    public void ChangeColor(Collectable collectable)
+    public void Deselect()
     {
         for (int i = 0; i < transform.childCount; ++i)
         {
@@ -67,7 +66,15 @@ public class Inventory : MonoBehaviour
                 }
             }
         }
-        collectable.inventorySlot.transform.GetChild(0).GetComponent<SpriteRenderer>().color = 
-            Color.yellow;
+    }
+
+    //Changes color of inventory slot and deselects item
+    public void ChangeColor(Collectable collectable)
+    {
+        if (collectable.isPlaced)
+        {
+            collectable.inventorySlot.transform.GetChild(0).GetComponent<SpriteRenderer>().color =
+                Color.yellow;
+        }
     }
 }

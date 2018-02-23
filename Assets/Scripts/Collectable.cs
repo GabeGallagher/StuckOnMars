@@ -14,6 +14,8 @@ public class Collectable : MonoBehaviour
 
     public CollectableManager collectableManager;
 
+    public Inventory inventory;
+
     public GameObject inventorySlot = null;
 
     public bool isPlaced = false, isSelected = false;
@@ -22,6 +24,8 @@ public class Collectable : MonoBehaviour
 
     private void OnMouseDown()
     {
+        inventory.Deselect();
+
         if (!isCollected)
         {
             transform.position = Vector2.zero;
@@ -31,8 +35,6 @@ public class Collectable : MonoBehaviour
 
         if (isCollected && isPlaced)
         {
-            Debug.Log(name + " selected in inventory");
-            Inventory inventory = inventorySlot.transform.parent.GetComponent<Inventory>();
             inventory.ChangeColor(gameObject.GetComponent<Collectable>());
             isSelected = true;
         }
