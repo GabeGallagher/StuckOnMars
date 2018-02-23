@@ -10,5 +10,16 @@ using UnityEngine;
 
 public class CollectableManager : MonoBehaviour
 {
+    public delegate void OnCollectableSelected();
+    public OnCollectableSelected collectableSelectedObserver = null;
 
+    public List<GameObject> collectablesList;
+
+    private void Start()
+    {
+        for (int i = 0; i < transform.childCount; ++i)
+        {
+            collectablesList.Add(transform.GetChild(i).gameObject);
+        }
+    }
 }

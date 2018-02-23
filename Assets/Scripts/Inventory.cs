@@ -44,7 +44,30 @@ public class Inventory : MonoBehaviour
             }
         }
         //places collectable in inventory
-        collectable.transform.position = targetSlot.transform.position;
+        collectable.transform.parent = targetSlot.transform;
+        collectable.transform.localPosition = Vector2.zero;
         collectable.GetComponent<Collectable>().isPlaced = true;
+        collectable.GetComponent<Collectable>().inventorySlot = targetSlot;
+    }
+
+    //Changes color of inventory slot and deselects item
+    public void ChangeColor(Collectable collectable)
+    {
+        for (int i = 0; i < transform.childCount; ++i)
+        {
+            transform.GetChild(i).GetChild(0).GetComponent<SpriteRenderer>().color = Color.white;
+            if (transform.GetChild(i).childCount > 1)
+            {
+                for (int j = 1; j < transform.GetChild(i).childCount; ++j)
+                {
+                    if (transform.GetChild(i).GetChild(j).GetComponent<Collectable>())
+                    {
+                        transform.GetChild(i).GetChild(j).GetComponent<Collectable>().isSelected = false;
+                    }
+                }
+            }
+        }
+        collectable.inventorySlot.transform.GetChild(0).GetComponent<SpriteRenderer>().color = 
+            Color.yellow;
     }
 }
