@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExitDoor : Interactables
+public class ExitDoor : Interactable
 {
     public bool hasCard;
 

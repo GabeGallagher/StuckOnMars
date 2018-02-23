@@ -122,11 +122,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4339869264002852, guid: ee93cf6f8b5cb094c9754f31300ace1e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.614
+      value: 2.661
       objectReference: {fileID: 0}
     - target: {fileID: 4339869264002852, guid: ee93cf6f8b5cb094c9754f31300ace1e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.755
+      value: -0.596
       objectReference: {fileID: 0}
     - target: {fileID: 4339869264002852, guid: ee93cf6f8b5cb094c9754f31300ace1e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -606,6 +606,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &687435535 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1593811283291288, guid: 5e86f5f2f6746474583e13b60dde44a5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1463653822}
+--- !u!114 &687435536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 687435535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2834539f5585f7f42b9c420e68b059d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text:
+  - {fileID: 1463653824}
+  waitSeconds: 3
+  hasPower: 0
+  charger: {fileID: 913718413}
 --- !u!1001 &768191232
 Prefab:
   m_ObjectHideFlags: 0
@@ -836,6 +857,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4339869264002852, guid: ee93cf6f8b5cb094c9754f31300ace1e,
     type: 2}
   m_PrefabInternal: {fileID: 1896378155}
+--- !u!114 &913718413 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114771262822891028, guid: ee93cf6f8b5cb094c9754f31300ace1e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1685997915}
+  m_Script: {fileID: 11500000, guid: 6b9380a6c34b702419b039c991c3d27f, type: 3}
 --- !u!1 &1016619288
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,6 +1274,79 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6af7e91d391b7e44b56b075b2f6ad24, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1299725015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1299725016}
+  - component: {fileID: 1299725017}
+  m_Layer: 0
+  m_Name: ChargerSprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1299725016
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1299725015}
+  m_LocalRotation: {x: -0, y: -0, z: 0.51721424, w: 0.855856}
+  m_LocalPosition: {x: -2.2, y: -0.448, z: 0}
+  m_LocalScale: {x: 0.17433952, y: 0.1743395, z: 0.1743395}
+  m_Children: []
+  m_Father: {fileID: 1463653823}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 62.291004}
+--- !u!212 &1299725017
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1299725015}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: ff0640a5845f1cb479b2ec10a25315af, type: 3}
+  m_Color: {r: 0.5147059, g: 0.70851934, b: 0.8235294, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6.4, y: 3.6}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!114 &1374603435 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114662860850232778, guid: e6af7e91d391b7e44b56b075b2f6ad24,
@@ -1305,12 +1405,12 @@ Prefab:
     - target: {fileID: 61739252556845378, guid: 5e86f5f2f6746474583e13b60dde44a5,
         type: 2}
       propertyPath: m_Offset.y
-      value: 0.20899382
+      value: -0.05101183
       objectReference: {fileID: 0}
     - target: {fileID: 61739252556845378, guid: 5e86f5f2f6746474583e13b60dde44a5,
         type: 2}
       propertyPath: m_Size.y
-      value: 1.2592907
+      value: 1.7793019
       objectReference: {fileID: 0}
     - target: {fileID: 1593811283291288, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
       propertyPath: m_Name
@@ -1334,7 +1434,8 @@ Prefab:
       propertyPath: m_Text
       value: I could place a Power Cell Charger here...
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114894505503164130, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5e86f5f2f6746474583e13b60dde44a5, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1463653823 stripped
@@ -1961,7 +2062,7 @@ Prefab:
     - target: {fileID: 114973158030591108, guid: 5e86f5f2f6746474583e13b60dde44a5,
         type: 2}
       propertyPath: m_Text
-      value: I need to place a Power Cell here...
+      value: I need to place a charged Power Cell here...
       objectReference: {fileID: 0}
     - target: {fileID: 114894505503164130, guid: 5e86f5f2f6746474583e13b60dde44a5,
         type: 2}
