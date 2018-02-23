@@ -12,16 +12,12 @@ public class Collectable : MonoBehaviour
 {
     public Animator anim;
 
-    public CollectableManager collectableManager;
-
     public Inventory inventory;
 
     public GameObject inventorySlot = null;
 
-    public bool isPlaced = false, isSelected = false;
-
-    bool isCollected = false;
-
+    public bool isPlaced = false, isSelected = false, isCollected = false;
+    
     private void OnMouseDown()
     {
         inventory.Deselect();

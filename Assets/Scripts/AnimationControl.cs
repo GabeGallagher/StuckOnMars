@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class AnimationControl : MonoBehaviour
 {
-    public Inventory inventory;
+    Inventory inventory;
 
     Animator anim;
 
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
+        inventory = transform.parent.GetComponent<Collectable>().inventory;
     }
 
     void Collect()

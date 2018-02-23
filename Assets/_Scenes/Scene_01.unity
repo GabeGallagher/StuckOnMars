@@ -126,7 +126,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4339869264002852, guid: ee93cf6f8b5cb094c9754f31300ace1e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.596
+      value: -1.14
       objectReference: {fileID: 0}
     - target: {fileID: 4339869264002852, guid: ee93cf6f8b5cb094c9754f31300ace1e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -182,7 +182,7 @@ Prefab:
     - target: {fileID: 61237677310552786, guid: ee93cf6f8b5cb094c9754f31300ace1e,
         type: 2}
       propertyPath: m_Offset.y
-      value: 0.048812628
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 61237677310552786, guid: ee93cf6f8b5cb094c9754f31300ace1e,
         type: 2}
@@ -192,7 +192,7 @@ Prefab:
     - target: {fileID: 61237677310552786, guid: ee93cf6f8b5cb094c9754f31300ace1e,
         type: 2}
       propertyPath: m_Offset.x
-      value: -0.041500688
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 61237677310552786, guid: ee93cf6f8b5cb094c9754f31300ace1e,
         type: 2}
@@ -521,6 +521,12 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &464145758 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114771262822891028, guid: ee93cf6f8b5cb094c9754f31300ace1e,
+    type: 2}
+  m_PrefabInternal: {fileID: 152072231}
+  m_Script: {fileID: 11500000, guid: 6b9380a6c34b702419b039c991c3d27f, type: 3}
 --- !u!224 &468325093 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224980174924030934, guid: e6af7e91d391b7e44b56b075b2f6ad24,
@@ -627,6 +633,10 @@ MonoBehaviour:
   waitSeconds: 3
   hasPower: 0
   charger: {fileID: 913718413}
+  brokenCell: {fileID: 464145758}
+  brokenCellChargedPrefab: {fileID: 1490820719048978, guid: e2bbc85febfe66a4d9b6f153f1047778,
+    type: 2}
+  hasCharger: 0
 --- !u!1001 &768191232
 Prefab:
   m_ObjectHideFlags: 0
@@ -1140,7 +1150,7 @@ GameObject:
   - component: {fileID: 1257271927}
   m_Layer: 0
   m_Name: Collectables
-  m_TagString: Untagged
+  m_TagString: CollectablesManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1173,7 +1183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e09bd565fd8d6c479199f0fc0eda505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectablesList: []
 --- !u!1001 &1286448175
 Prefab:
   m_ObjectHideFlags: 0

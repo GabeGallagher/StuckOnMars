@@ -10,7 +10,11 @@ using UnityEngine;
 
 public class ChargerStation : Interactable
 {
-    public Collectable charger;
+    public Collectable charger, brokenCell;
+
+    public GameObject brokenCellChargedPrefab;
+
+    public bool hasCharger = false;
 
     public override void OnMouseDown()
     {
@@ -26,8 +30,35 @@ public class ChargerStation : Interactable
             }
             charger.inventory.Deselect();
             Destroy(charger.gameObject);
+            hasCharger = true;
         }
-        else
+        else if (brokenCell.isSelected && hasCharger)
+        {
+            Transform collectablesParent = null;
+            for (int i = 0; i < transform.parent.childCount; ++i)
+            {
+                if (transform.parent.GetChild(i).tag == "CollectablesManager")
+                {
+                    collectablesParent = transform.parent.GetChild(i);
+                }
+            }
+            GameObject brokenCellCharged = Instantiate(brokenCellChargedPrefab, collectablesParent) as
+                GameObject;
+            brokenCellCharged.GetComponent<Collectable>().inventory = 
+                brokenCell.GetComponent<Collectable>().inventory;
+            brokenCell.inventory.Deselect();
+            Destroy(brokenCell.gameObject);
+            for (int i = 0; i < brokenCellCharged.transform.childCount; ++i)
+            {
+                if (brokenCellCharged.transform.GetChild(i).GetComponent<Animator>())
+                {
+                    brokenCellCharged.transform.GetChild(i).GetComponent<Animator>().SetBool(
+                        "isCollected", true);
+                }
+            }
+            brokenCellCharged.GetComponent<Collectable>().isCollected = true;
+        }
+        else if (!hasCharger)
         {
             base.OnMouseDown(); 
         }
