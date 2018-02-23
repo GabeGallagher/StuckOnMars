@@ -48,6 +48,7 @@ public class ChargerStation : Interactable
                 brokenCell.GetComponent<Collectable>().inventory;
             brokenCell.inventory.Deselect();
             Destroy(brokenCell.gameObject);
+
             for (int i = 0; i < brokenCellCharged.transform.childCount; ++i)
             {
                 if (brokenCellCharged.transform.GetChild(i).GetComponent<Animator>())
@@ -57,6 +58,10 @@ public class ChargerStation : Interactable
                 }
             }
             brokenCellCharged.GetComponent<Collectable>().isCollected = true;
+
+            //assign brokenCellCharged to the power source object so that it can be placed later
+            GameObject powerSource = GameObject.Find("PowerSource");
+            powerSource.GetComponent<PowerSource>().brokenCellCharged = brokenCellCharged;
         }
         else if (!hasCharger)
         {

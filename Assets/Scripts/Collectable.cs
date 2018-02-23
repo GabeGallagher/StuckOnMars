@@ -18,7 +18,7 @@ public class Collectable : MonoBehaviour
 
     public bool isPlaced = false, isSelected = false, isCollected = false;
     
-    private void OnMouseDown()
+    public virtual void OnMouseDown()
     {
         inventory.Deselect();
 
