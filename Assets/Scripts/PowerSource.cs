@@ -5,7 +5,7 @@ using UnityEngine;
 public class PowerSource : Interactable
 {
     public GameObject brokenCellCharged, powerCellFixed, backgroundPoweredDown, backgroundDoorClosed,
-        backgroundDoorOpen, exitDoor;
+        exitDoor;
 
     bool hasCell = false;
 

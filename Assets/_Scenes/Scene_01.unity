@@ -413,7 +413,8 @@ Prefab:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 1374603435}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114771262822891028, guid: ee93cf6f8b5cb094c9754f31300ace1e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ee93cf6f8b5cb094c9754f31300ace1e, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &229566452 stripped
@@ -892,7 +893,6 @@ MonoBehaviour:
   powerCellFixed: {fileID: 0}
   backgroundPoweredDown: {fileID: 2040058996}
   backgroundDoorClosed: {fileID: 2117225157}
-  backgroundDoorOpen: {fileID: 1665348654}
   exitDoor: {fileID: 1888339901}
 --- !u!114 &913718413 stripped
 MonoBehaviour:
@@ -900,6 +900,29 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1685997915}
   m_Script: {fileID: 11500000, guid: 6b9380a6c34b702419b039c991c3d27f, type: 3}
+--- !u!1 &934271139 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1074155020952630, guid: ee93cf6f8b5cb094c9754f31300ace1e,
+    type: 2}
+  m_PrefabInternal: {fileID: 229566451}
+--- !u!114 &934271140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 934271139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f278fc56a7255f459ada2fdd92f23c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1342696910}
+  inventory: {fileID: 1374603435}
+  inventorySlot: {fileID: 0}
+  isPlaced: 0
+  isSelected: 0
+  isCollected: 0
+  exitDoor: {fileID: 1170808072}
 --- !u!1 &1016619288
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,6 +1185,9 @@ MonoBehaviour:
   waitSeconds: 3
   hasPower: 0
   hasCard: 0
+  doorOpen: 0
+  backgroundDoorClosed: {fileID: 2117225157}
+  backgroundDoorOpen: {fileID: 1665348654}
 --- !u!1 &1170808073 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1713377390617228, guid: 5e86f5f2f6746474583e13b60dde44a5,
@@ -1484,6 +1510,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!95 &1342696910 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95782579868610144, guid: ee93cf6f8b5cb094c9754f31300ace1e,
+    type: 2}
+  m_PrefabInternal: {fileID: 229566451}
 --- !u!114 &1374603435 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114662860850232778, guid: e6af7e91d391b7e44b56b075b2f6ad24,

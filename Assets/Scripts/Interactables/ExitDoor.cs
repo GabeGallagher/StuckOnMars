@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class ExitDoor : Interactable
 {
-    public bool hasCard;
+    public bool hasCard, doorOpen;
+
+    public GameObject backgroundDoorClosed, backgroundDoorOpen;
 
     public override void OnMouseDown()
     {
@@ -15,6 +17,13 @@ public class ExitDoor : Interactable
         else if (hasPower && !hasCard)
         {
             StartCoroutine(base.ShowElement(base.text[1]));
+        }
+        else if (doorOpen) { Debug.Log("Win condition"); }
+        else if (hasPower && hasCard)
+        {
+            backgroundDoorClosed.SetActive(false);
+            backgroundDoorOpen.SetActive(true);
+            doorOpen = true;
         }
     }
 }
