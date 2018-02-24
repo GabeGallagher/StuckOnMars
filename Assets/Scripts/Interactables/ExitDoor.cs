@@ -6,7 +6,9 @@ public class ExitDoor : Interactable
 {
     public bool hasCard, doorOpen;
 
-    public GameObject backgroundDoorClosed, backgroundDoorOpen;
+    public GameObject backgroundDoorClosed, backgroundDoorOpen; 
+        
+    public LevelManager levelManager;
 
     public override void OnMouseDown()
     {
@@ -18,7 +20,11 @@ public class ExitDoor : Interactable
         {
             StartCoroutine(base.ShowElement(base.text[1]));
         }
-        else if (doorOpen) { Debug.Log("Win condition"); }
+        else if (doorOpen)
+        {
+            Debug.Log("Win condition");
+            levelManager.LoadNextLevel();
+        }
         else if (hasPower && hasCard)
         {
             backgroundDoorClosed.SetActive(false);
