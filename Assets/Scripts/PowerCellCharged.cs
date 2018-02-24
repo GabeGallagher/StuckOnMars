@@ -17,6 +17,7 @@ public class PowerCellCharged : Collectable
     {
         if(tape != null && tape.isSelected)
         {
+            Destroy(tape.gameObject);
             Transform collectablesParent = null;
             for (int i = 0; i < transform.parent.childCount; ++i)
             {
@@ -31,6 +32,11 @@ public class PowerCellCharged : Collectable
             inventory.Deselect();
             powerCellFixed.GetComponent<Collectable>().anim.SetBool("isCollected", true);
             powerCellFixed.GetComponent<Collectable>().isCollected = true;
+
+            //place fixed cell in power source
+            GameObject powerSource = GameObject.Find("PowerSource");
+            powerSource.GetComponent<PowerSource>().powerCellFixed = powerCellFixed;
+            powerSource.GetComponent<PowerSource>().brokenCellCharged = null;
             Destroy(gameObject);
         }
         else
