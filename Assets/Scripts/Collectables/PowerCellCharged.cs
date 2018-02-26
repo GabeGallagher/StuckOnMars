@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/* Author Gabriel B. Gallagher February 23 2018
+ * 
+ * Inherits from the Collectables.cs and adds functionality exclusive to the charged, but still
+ * broken, power cell. Allows the player to "fix" the power cell with the tape, and passes important
+ * information onto the fixed power cell
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

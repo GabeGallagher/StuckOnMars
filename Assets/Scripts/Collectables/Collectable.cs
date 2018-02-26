@@ -49,8 +49,8 @@ public class Collectable : MonoBehaviour
                 nameText = nameTextParent.transform.GetChild(i).gameObject;
                 Debug.Log("Text name: " + nameText.name);
             }
-            StartCoroutine(ShowElement(nameText));
         }
+        StartCoroutine(ShowElement(nameText));
 
         if (nameText != null)
         {

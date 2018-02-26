@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/* Author Gabriel B. Gallagher February 19 2018
+ * 
+ * Controls the animation of collectables when they are first collected
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
